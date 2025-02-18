@@ -1,6 +1,6 @@
 # Authgear sample for iOS
 
-This repo demonstrates how to add authentication into an iOS apps using Authgear.
+This repo demonstrates how to add authentication to an iOS app using Authgear.
 
 ## Project setup
 
@@ -8,10 +8,13 @@ Import project to Xcode
 
 ### Configuration
 
-The project needs to be configured with your Authgear app's Endpoint and client ID in order for the authentication flow to work.
+The project needs to be configured with your Authgear client application's **Endpoint** and **Client ID** in order for the authentication flow to work.
 
-To do this, in `ContentView.swift`, replace `"<ClIENT_ID>"`, `"<AUTHGEAR_ENDPOINT>"` with with your own Authgear application credentials.
+To do this, in `ContentView.swift`, replace `"<ClIENT_ID>"`, `"<AUTHGEAR_ENDPOINT>"` with with your own Authgear client application credentials.
 
+To run this example app, add the following URI to your Authgear client application's Authorized Redirect URI:
+
+- `com.example.authgeardemo://host/path`
 
 ## What is Authgear?
 
