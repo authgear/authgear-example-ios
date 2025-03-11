@@ -8,8 +8,8 @@
 import SwiftUI
 import Authgear
 struct ContentView: View {
-    
-    private var authgear: Authgear = Authgear(clientId: "<ClIENT_ID>", endpoint: "<AUTHGEAR_ENDPOINT>")
+
+    private var authgear: Authgear = Authgear(clientId: Constants.authgearClientId, endpoint: Constants.authgearEndpoint)
     @State private var loginState: SessionState = .unknown
     @State private var isLoading: Bool = false
     @State private var userId: String? = ""
@@ -56,7 +56,7 @@ struct ContentView: View {
     
     func startAuthentication() {
         isLoading = true
-        authgear.authenticate(redirectURI: "com.example.authgeardemo://host/path", handler: { result in
+        authgear.authenticate(redirectURI: Constants.authgearRedirectUri, handler: { result in
             switch result {
             case let .success(userInfo):
                 // login successfully

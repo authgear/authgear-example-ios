@@ -10,7 +10,7 @@ Import project to Xcode
 
 The project needs to be configured with your Authgear client application's **Endpoint** and **Client ID** in order for the authentication flow to work.
 
-To do this, in `ContentView.swift`, replace `"<ClIENT_ID>"`, `"<AUTHGEAR_ENDPOINT>"` with with your own Authgear client application credentials.
+To do this, open `Constants.swift`, and replace `"<AUTHGEAR_CLIENT_ID>"`, `"<AUTHGEAR_ENDPOINT>"` with with your own Authgear client application credentials.
 
 To run this example app, add the following URI to your Authgear client application's Authorized Redirect URI:
 
