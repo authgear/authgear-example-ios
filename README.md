@@ -3,8 +3,13 @@
 This repo demonstrates how to add authentication to an iOS app using Authgear.
 
 ## Project setup
+### Create Free Authgear Account
+1. Goto [https://portal.authgear.com](https://portal.authgear.com) and create a free account (or login to your existing account).
 
-Import project to Xcode
+2. Then navigate to Applications and create a new client application of type Native App.
+
+### Import project to Xcode
+Clone this repo and import the project to Xcode.
 
 ### Configuration
 
@@ -15,6 +20,8 @@ To do this, open `Constants.swift`, and replace `"<AUTHGEAR_CLIENT_ID>"`, `"<AUT
 To run this example app, add the following URI to your Authgear client application's Authorized Redirect URI:
 
 - `com.example.authgeardemo://host/path`
+
+See the full tutorial for this demo app [Here](https://docs.authgear.com/get-started/native-mobile-app/ios).
 
 ## What is Authgear?
 
